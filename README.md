@@ -25,6 +25,10 @@ Not included:
 - Probe-specific production parameter sets
 - Fully validated hardware timing and safety guarantees
 
+<p align="center">
+  <img width="800" alt="System configuration overview" src="docs/system-config-open.png" />
+</p>
+
 ## Repository Layout
 
 ```text
