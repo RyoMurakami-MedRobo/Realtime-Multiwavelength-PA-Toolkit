@@ -1,0 +1,8 @@
+.DS_Store
+
+# MATLAB autosave / codegen
+*.asv
+slprj/
+
+# Runtime shared-memory file (created under system temp; do not commit)
+shared_image_data_public.dat
