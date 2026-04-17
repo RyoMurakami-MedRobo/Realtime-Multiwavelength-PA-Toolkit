@@ -10,12 +10,10 @@ This repository scope is broader and intended to support additional hardware com
 1. Cite the archive paper for the initial OPOTEK + Verasonics method and workflow context.
 2. Optionally cite this repository URL in methods or software sections.
 
-## Citation Template (to be finalized)
-
-Replace the placeholder fields below with the final archive metadata.
+## Citation Template
 
 ```bibtex
-@article{rt-mpai-opotek-verasonics-2026,
+@misc{rt-mpai-opotek-verasonics-2026,
       title={Democratization of Real-time Multi-Spectral Photoacoustic Imaging: Open-Sourced System Architecture for OPOTEK Phocus & Verasonics Vantage Combination}, 
       author={Ryo Murakami and Yichuan Tang and Haichong K. Zhang},
       year={2026},
@@ -26,7 +24,3 @@ Replace the placeholder fields below with the final archive metadata.
 }
 ```
 
-## Current Status
-
-Archive identifier is intentionally left as a placeholder in this public draft.
-Update this file once the archive entry is finalized.
