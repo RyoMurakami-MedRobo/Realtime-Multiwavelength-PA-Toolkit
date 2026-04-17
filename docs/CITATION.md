@@ -15,12 +15,14 @@ This repository scope is broader and intended to support additional hardware com
 Replace the placeholder fields below with the final archive metadata.
 
 ```bibtex
-@article{ablationcontrol_archive,
-  title   = {TITLE_PLACEHOLDER},
-  author  = {Ryo Murakami and Yichuan Tang and Shun Katayose and Haichong Kai Zhang},
-  journal = {arXiv preprint arXiv:ARXIV_ID_PLACEHOLDER},
-  year    = {YEAR_PLACEHOLDER},
-  url     = {ARCHIVE_URL_PLACEHOLDER}
+@misc{rt-mpai-opotek-verasonics-2026,
+      title={Democratization of Real-time Multi-Spectral Photoacoustic Imaging: Open-Sourced System Architecture for OPOTEK Phocus & Verasonics Vantage Combination}, 
+      author={Ryo Murakami and Yichuan Tang and Haichong K. Zhang},
+      year={2026},
+      eprint={2604.15255},
+      archivePrefix={arXiv},
+      primaryClass={cs.AR},
+      url={https://arxiv.org/abs/2604.15255}, 
 }
 ```
 
