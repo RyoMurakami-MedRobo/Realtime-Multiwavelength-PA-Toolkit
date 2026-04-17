@@ -1,10 +1,14 @@
 # Credits
 
-## Authors
+## Repository Management
+
+- Ryo Murakami
+- Shun Katayose, M.D.
+
+## Reference Paper Authors
 
 - Ryo Murakami
 - Yichuan Tang, Ph.D.
-- Shun Katayose
 - Haichong Kai Zhang, Ph.D.
 
 ## Institution
