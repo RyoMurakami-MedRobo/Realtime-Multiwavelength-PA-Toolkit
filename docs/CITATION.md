@@ -15,7 +15,7 @@ This repository scope is broader and intended to support additional hardware com
 Replace the placeholder fields below with the final archive metadata.
 
 ```bibtex
-@misc{rt-mpai-opotek-verasonics-2026,
+@article{rt-mpai-opotek-verasonics-2026,
       title={Democratization of Real-time Multi-Spectral Photoacoustic Imaging: Open-Sourced System Architecture for OPOTEK Phocus & Verasonics Vantage Combination}, 
       author={Ryo Murakami and Yichuan Tang and Haichong K. Zhang},
       year={2026},
