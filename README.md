@@ -12,6 +12,12 @@ It mirrors the current lab architecture with three systems:
 
 The purpose is to show required implementation elements and interfaces. The public draft runs in offline demo mode by default, and can be expanded with local hardware and a licensed Verasonics SDK.
 
+**Related Publications:**
+1. Democratization of Real-time Multi-Spectral Photoacoustic Imaging: Open-Sourced System Architecture for OPOTEK Phocus & Verasonics Vantage Combination,
+   Ryo Murakami, Yichuan Tang, Haichong K. Zhang  
+   arXiv:2604.15255 \[cs.AR\] (v1, 16 Apr 2026)  
+   DOI: https://doi.org/10.48550/arXiv.2604.15255  
+
 ## Scope
 
 Included:
