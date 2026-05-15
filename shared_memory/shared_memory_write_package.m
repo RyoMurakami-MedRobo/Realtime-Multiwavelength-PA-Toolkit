@@ -29,11 +29,13 @@ payload_bytes = typecast(package_data(:), 'uint8');
 timestamp_unix_ms = get_meta_int64(meta, 'timestamp_unix_ms', int64(posixtime(datetime('now')) * 1000));
 success_count = uint32(get_meta_scalar(meta, 'success_count', 0));
 
-write_slot_field(state.mmf, slot_offset + cfg.slot_status_offset, cfg.slot_ready);
 write_slot_field(state.mmf, slot_offset + cfg.slot_package_index_offset, uint32(idx));
 write_slot_field(state.mmf, slot_offset + cfg.slot_success_count_offset, success_count);
 write_slot_field(state.mmf, slot_offset + cfg.slot_timestamp_offset, int64(timestamp_unix_ms));
 state.mmf.Data(1).data(1, slot_offset + cfg.slot_payload_offset + 1 : slot_offset + cfg.slot_payload_offset + numel(payload_bytes)) = payload_bytes;
+% Ready flag is written last so a concurrent reader never sees slot_ready
+% before the payload bytes are committed.
+write_slot_field(state.mmf, slot_offset + cfg.slot_status_offset, cfg.slot_ready);
 
 header.total_packages = uint32(idx);
 header.valid_packages = uint32(idx);

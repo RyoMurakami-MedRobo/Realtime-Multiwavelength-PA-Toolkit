@@ -27,8 +27,7 @@ if cfg.modes.simulation_only
 else
     fprintf('Starting TCP server...\n');
     server = tcpserver(cfg.network.server_host, cfg.network.server_port);
-    server.InputBufferSize = 100 * 1024 * 1024;
-    
+
     expected_header_bytes = 16;
     expected_image_bytes = cfg.shared_memory.image_width * cfg.shared_memory.image_height * 2; % int16
     expected_total_bytes = expected_header_bytes + expected_image_bytes;
@@ -40,8 +39,8 @@ else
     layout_mode = cfg.modes.package_layout_mode;
     
     wavelength_buffer = cell(num_wl, 1);
-    for w=1:num_wl
-        wavelength_buffer{w} = zeros(cfg.shared_memory.image_width, cfg.shared_memory.image_height, frames_per_wl, 'int16');
+    for wl=1:num_wl
+        wavelength_buffer{wl} = zeros(cfg.shared_memory.image_width, cfg.shared_memory.image_height, frames_per_wl, 'int16');
     end
     
     valid_start_count = 2; % Typically skip the first dummy pulse

@@ -54,16 +54,17 @@ AblationControl_public/
 
 ## Quick Start (Structure Verification)
 
-1. Edit configuration templates in `config/`.
-2. Start MATLAB server script first:
+1. From the repository root in MATLAB, run `setup_paths` once to add all toolkit folders to the current session path.
+2. Edit configuration templates in `config/`.
+3. Start MATLAB server script first:
    - `server/run_tcp_server.m`
    - This creates the temporary backend file under the system temp folder.
-3. Start MATLAB client script in another MATLAB instance:
+4. Start MATLAB client script in another MATLAB instance:
    - `client/run_processing_client.m`
    - The client drains all currently available packages and exits after a short idle grace period.
-4. Prepare Verasonics-side adaptation:
+5. Prepare Verasonics-side adaptation:
    - `verasonics/run_verasonics_host_template.m`
-5. Upload Arduino sketch:
+6. Upload Arduino sketch:
    - `arduino/trigger_monitor_minimal/trigger_monitor_minimal.ino`
 
 Default behavior in this draft:
